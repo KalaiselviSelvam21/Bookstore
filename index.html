@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    
+    <header class="header">
+        <div class="container0">
+            
+
+            <nav class="header__nav">
+                <a href="#"><img class="luffy" src="src/logo.png" alt="Bookstore"></a>
+                <ul class="header__menu">
+                    <li><a onclick="Homepage()" href="#">Home</a></li>
+                    <li><a onclick="Books()">Books</a></li>
+                    <li><a href="#">Authors</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a onclick="contact()">Contact</a></li>
+                </ul>
+                <div class="search-box">
+                    <button class="btn-search"> <img src="src/search.png" alt=""></button>
+                    <input type="text" class="input-search" placeholder="Type to Search...">
+                </div>
+                <div class="Mycart">
+                    <button onclick="mycart()" class="btn-cart"> <img src="src/cart.png" alt=""></button> 
+                    <!-- <span id='numOfItems'>0</span>   -->
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    
+    <!--  -->
+    <section class="featured-books">
+        <div class="container">
+            <h2 class="section-title">Featured Books</h2>
+            <div class="books">
+                <div class="container">
+                    <div class="inner-container">
+                        <div class="flex-container">
+                            <div class="text-container">
+                                <div class="heading-widget">
+                                    <h6>New Release</h6>
+                                </div>                            
+                                <h1 class="title-container h1">The Sons of the Empire</h1>
+                                <div class="para-container">
+                                <p class="abt1">"Enter a world of intrigue and courage, where an empire's future rests on the shoulders of its heir. Through trials of loyalty and courage, witness the saga of 'The Sons of the Empire,' a tale of power, passion, and destiny."</p>
+                                </div>
+                                <div class="button-container">
+                                    <div class="button-wrapper">
+                                        <a class="button1" href="#">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                    <div class="button-wrapper">
+                                        <a class="button2" href="#">
+                                            <span>Read Sample</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <img src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/04/author-book-store-hero-book-cover-img.jpg" alt="Book Cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                    <!-- 2 -->
+                <div class="bio-section">
+                    <div class="section">
+                        <div class="image">
+                            <img src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/04/author-book-store-author-img.jpg" alt="Author Image">
+                        </div>
+                        <div class="content">
+                            <h6>Biography</h6>
+                            <h2>John Roberts</h2>
+                            <p>
+                                Tellus tellus mattis pulvinar nulla euismod fermentum rhoncus sed vestibulum neque praesent pharetra ut fames viverra suscipit gravida dictumst volutpat ullamcorper lacus, malesuada enim proin volutpat mattis nunc amet, eget vitae egestas.<br>
+                                Vulputate vulputate eget cursus nam ultricies mauris, malesuada elementum lacus arcu, sit dolor ipsum, ac felis, egestas vel tortor eget aenean nam.
+                            </p>
+                            <!-- <a href="#" class="btn">Read More</a> -->
+                        </div>
+                    </div>
+                    <div class="awards-container">
+                        <div class="award">
+                            <div class="image-container1">
+                            <img src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/04/author-book-store-awards-logo-1.svg" alt="Award Logo"></div>
+                            <h5>Best Author Awards 2012</h5>
+                            <p>Arcu pellentesque nisi consectetur netus aenean metus sit mattis sit sed.</p>
+                        </div>
+                        <div class="award">
+                            <div class="image-container1">
+                            <img src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/04/author-book-store-awards-logo-.svg" alt="Award Logo"></div>
+                            <h5>World's #1 Best-selling Book</h5>
+                            <p>Diam nibh non in enim nunc suscipit risus, adipiscing aenean quisque viverra.</p>
+                        </div>
+                        <div class="award">
+                            <div class="image-container1">
+                            <img src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/04/author-book-store-awards-logo-3.svg" alt="Award Logo"></div>
+                            <h5>NYT Best-selling Author 2014</h5>
+                            <p>Urna donec dolor bibendum lectus arcu purus eget nisl, ut nisl vitae.</p>
+                        </div>
+                        
+                        <div class="award">
+                            <div class="image-container1">
+                            <img src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/04/author-book-store-awards-logo-4.svg" alt="Award Logo"></div>
+                            <h5>Best Author Awards 2018</h5>
+                            <p>Morbi odio sodales et facilisis mi nibh fringilla quis risus ultricies facilisis.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                <!-- Featured books will go here -->
+
+                <div class="elementor-widget-container">
+                    <h2 class="elementor-heading-title elementor-size-default" id="title">Best Selling Books</h2>
+                </div>
+                
+                <div class="elementor-element elementor-element-775c6ed elementor-widget elementor-widget-text-editor" data-id="775c6ed" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                        <p class="custom-paragraph">Vulputate vulputate eget cursus nam ultricies mauris, malesuada elementum lacus arcu, sit <br> dolor ipsum, ac felis, egestas vel tortor eget aenean.</p>
+                    </div>
+                </div>
+
+                <class= product fantasy sci-fi science>
+                    <section class="Books">
+                        <!-- Book 1 -->
+                        <div class="book">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-cover-06-300x450.jpg" alt="The Born of APLEX">
+                                </a>
+                            </div>
+                            <div class="summary">
+                                <span class="category">Fantasy</span>
+                                <h2 class="book_title">The Born of APLEX</h2>
+                                <span class="price">$26.00</span>
+                            </div>
+                        </div>
+                    
+                        <!-- Book 2 -->
+                        <div class="book">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img loading="lazy" decoding="async" width="300" height="450" src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-cover-07-300x450.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-cover-07-300x450.jpg 300w, https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-cover-07-200x300.jpg 200w, https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-cover-07.jpg 400w" sizes="(max-width: 300px) 100vw, 300px">
+                                </a>
+                            </div>
+                            <div class="summary">
+                                <span class="category">Fantasy</span>
+                                <h2 class="book_title">The Throned Mirror</h2>
+                                <span class="price">$23.00</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Book 3 -->
+                        <div class="book">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img loading="lazy" decoding="async" width="300" height="450" src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-cover-08-300x450.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-cover-08-300x450.jpg 300w, https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-cover-08-200x300.jpg 200w, https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-cover-08.jpg 400w" sizes="(max-width: 300px) 100vw, 300px">
+                                </a>
+                            </div>
+                            <div class="summary">
+                                <span class="category">Fantasy</span>
+                                <h2 class="book_title">The Throned Mirror</h2>
+                                <span class="price">$20.00</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Book 4 -->
+                        <div class="book">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img loading="lazy" decoding="async" width="300" height="450" src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-img-01-300x450.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-img-01-300x450.jpg 300w, https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-img-01-200x300.jpg 200w, https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-img-01.jpg 400w" sizes="(max-width: 300px) 100vw, 300px">
+                                </a>
+                            </div>
+                            <div class="summary">
+                                <span class="category">Fantasy</span>
+                                <h2 class="book_title">The Throned Mirror</h2>
+                                <span class="price">$20.00</span>
+                            </div>
+                        </div>
+                    </section>
+                </class>
+                <div class="shopbook" style="text-align: center;">
+                    <button class="button-8"onclick=shopallbooks() role="button">Shop All Books</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer class="footer" >
+        
+        <div class="container" id="contactus">
+            <p><strong>Contact Us</strong></p>
+            <p>Email : bookstore@hotmail.com</p>
+            <p>Phone : 123-456-7890</p>
+        </div>
+            <nav>
+                <ul class="footer__menu">
+                    <li><a href="#">privacy policy & terms and condition</a></li>
+                </ul>
+            </nav>
+            <div class="trademark">
+                <p>© 2024 Copyright:zigzagzam</p>
+                <p>Bookstore is a registered trademark of zigzagzam, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
